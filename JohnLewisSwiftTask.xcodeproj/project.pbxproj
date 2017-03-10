@@ -146,8 +146,8 @@
 				B347D55C1E72BE8F009AB510 /* ProductTest.swift */,
 				B347D56A1E72C095009AB510 /* ProductApiTest.swift */,
 				B347D5711E72C3A0009AB510 /* SpecificationTest.swift */,
-				B347D55E1E72BE8F009AB510 /* Info.plist */,
 				B347D5751E72C693009AB510 /* ProductImagesTest.swift */,
+				B347D55E1E72BE8F009AB510 /* Info.plist */,
 			);
 			path = JohnLewisSwiftTaskTests;
 			sourceTree = "<group>";
