@@ -21,10 +21,15 @@ class ProductGridVC: UIViewController, UICollectionViewDataSource, UICollectionV
 
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         
-        let width = screenWidth < 768 ? screenWidth/2 : screenWidth / 4;
+        let width = screenWidth < 900 ? screenWidth < 600 ? screenWidth/2 : screenWidth/3 : screenWidth / 4;
+        var height = screenHeight/2 - 80;
+        
+        if(screenWidth > 600 && UIDevice.current.orientation == .portrait || UIDevice.current.orientation == .portraitUpsideDown){
+            height = height - 100
+        }
         
         layout.sectionInset = UIEdgeInsets(top: 20, left: 0, bottom: 10, right: 0)
-        layout.itemSize = CGSize(width: width, height: screenHeight/2 - 60)
+        layout.itemSize = CGSize(width: width, height: height)
         layout.minimumInteritemSpacing = 0
         layout.minimumLineSpacing = 0
         self.productsCollection.collectionViewLayout = layout
