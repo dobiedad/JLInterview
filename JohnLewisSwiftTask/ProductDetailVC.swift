@@ -4,6 +4,7 @@ import ImageSlideshow
 
 class ProductDetailVC: UIViewController,UITableViewDelegate,UITableViewDataSource{
     
+    @IBOutlet var tableHeightConstraint: NSLayoutConstraint!
     @IBOutlet var productInfoTextView: UITextView!
     @IBOutlet var productCodeLabel: UILabel!
     @IBOutlet var warrantyLabel: UILabel!
@@ -30,6 +31,11 @@ class ProductDetailVC: UIViewController,UITableViewDelegate,UITableViewDataSourc
         selectedProduct = product;
     }
     
+    override func updateViewConstraints() {
+        super.updateViewConstraints()
+        self.tableHeightConstraint.constant = specsTable.contentSize.height
+    }
+    
     func setUpView(){
         self.productInfoTextView.text = selectedProduct.info;
         self.productCodeLabel.text = "Product code: " + selectedProduct.code;
@@ -42,7 +48,7 @@ class ProductDetailVC: UIViewController,UITableViewDelegate,UITableViewDataSourc
         self.specsTable.delegate = self
         self.specsTable.dataSource = self
         self.specsTable.register(UITableViewCell.self, forCellReuseIdentifier: "selectedProduct")
-        
+        self.galleryView.pageControl.currentPageIndicatorTintColor = UIColor.black
         var arrayOfImages:Array<Any> = [];
         
         for i in 0..<self.selectedProduct.media.urls.count {
