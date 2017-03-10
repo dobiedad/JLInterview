@@ -21,10 +21,7 @@ class ProductAPITest: XCTestCase {
             XCTAssertGreaterThan((products[0] as! Product).title.characters.count, 0)
             XCTAssertGreaterThan((products[0] as! Product).id.characters.count, 0)
             XCTAssertGreaterThan((products[0] as! Product).price.characters.count, 0)
-            
             XCTAssertEqual(products.count, 20)
         }
-        
-        
     }
 }

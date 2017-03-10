@@ -14,7 +14,6 @@ class ProductTest: XCTestCase {
         
         exp.fulfill()
         
-        
         self.waitForExpectations(timeout: 1) { error in
             XCTAssertNil(error, "Error")
             XCTAssertGreaterThan(product.title.characters.count, 0)

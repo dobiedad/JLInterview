@@ -19,6 +19,8 @@
 		B347D56B1E72C095009AB510 /* ProductApiTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B347D56A1E72C095009AB510 /* ProductApiTest.swift */; };
 		B347D56E1E72C0C7009AB510 /* ProductAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B347D56D1E72C0C7009AB510 /* ProductAPI.swift */; };
 		B347D5701E72C0F1009AB510 /* Lists.swift in Sources */ = {isa = PBXBuildFile; fileRef = B347D56F1E72C0F1009AB510 /* Lists.swift */; };
+		B347D5721E72C3A0009AB510 /* SpecificationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B347D5711E72C3A0009AB510 /* SpecificationTest.swift */; };
+		B347D5741E72C3CE009AB510 /* Specification.swift in Sources */ = {isa = PBXBuildFile; fileRef = B347D5731E72C3CE009AB510 /* Specification.swift */; };
 		D173D3DD2DAC6A113A9E2603 /* Pods_JohnLewisSwiftTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7765BEFAD8E3DB7D1AC2509 /* Pods_JohnLewisSwiftTask.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +55,8 @@
 		B347D56A1E72C095009AB510 /* ProductApiTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductApiTest.swift; sourceTree = "<group>"; };
 		B347D56D1E72C0C7009AB510 /* ProductAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductAPI.swift; sourceTree = "<group>"; };
 		B347D56F1E72C0F1009AB510 /* Lists.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lists.swift; sourceTree = "<group>"; };
+		B347D5711E72C3A0009AB510 /* SpecificationTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecificationTest.swift; sourceTree = "<group>"; };
+		B347D5731E72C3CE009AB510 /* Specification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Specification.swift; sourceTree = "<group>"; };
 		D7765BEFAD8E3DB7D1AC2509 /* Pods_JohnLewisSwiftTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JohnLewisSwiftTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -137,6 +141,7 @@
 			children = (
 				B347D55C1E72BE8F009AB510 /* ProductTest.swift */,
 				B347D56A1E72C095009AB510 /* ProductApiTest.swift */,
+				B347D5711E72C3A0009AB510 /* SpecificationTest.swift */,
 				B347D55E1E72BE8F009AB510 /* Info.plist */,
 			);
 			path = JohnLewisSwiftTaskTests;
@@ -147,6 +152,7 @@
 			children = (
 				B347D5681E72BEB9009AB510 /* Product.swift */,
 				B347D56F1E72C0F1009AB510 /* Lists.swift */,
+				B347D5731E72C3CE009AB510 /* Specification.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -367,6 +373,7 @@
 				B347D5691E72BEB9009AB510 /* Product.swift in Sources */,
 				B347D5451E72BE8F009AB510 /* AppDelegate.swift in Sources */,
 				B347D54D1E72BE8F009AB510 /* JohnLewisSwiftTask.xcdatamodeld in Sources */,
+				B347D5741E72C3CE009AB510 /* Specification.swift in Sources */,
 				B347D56E1E72C0C7009AB510 /* ProductAPI.swift in Sources */,
 				B347D5701E72C0F1009AB510 /* Lists.swift in Sources */,
 			);
@@ -376,6 +383,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B347D5721E72C3A0009AB510 /* SpecificationTest.swift in Sources */,
 				B347D56B1E72C095009AB510 /* ProductApiTest.swift in Sources */,
 				B347D55D1E72BE8F009AB510 /* ProductTest.swift in Sources */,
 			);
