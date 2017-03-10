@@ -16,6 +16,9 @@
 		B347D5521E72BE8F009AB510 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B347D5501E72BE8F009AB510 /* LaunchScreen.storyboard */; };
 		B347D55D1E72BE8F009AB510 /* ProductTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B347D55C1E72BE8F009AB510 /* ProductTest.swift */; };
 		B347D5691E72BEB9009AB510 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = B347D5681E72BEB9009AB510 /* Product.swift */; };
+		B347D56B1E72C095009AB510 /* ProductApiTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B347D56A1E72C095009AB510 /* ProductApiTest.swift */; };
+		B347D56E1E72C0C7009AB510 /* ProductAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B347D56D1E72C0C7009AB510 /* ProductAPI.swift */; };
+		B347D5701E72C0F1009AB510 /* Lists.swift in Sources */ = {isa = PBXBuildFile; fileRef = B347D56F1E72C0F1009AB510 /* Lists.swift */; };
 		D173D3DD2DAC6A113A9E2603 /* Pods_JohnLewisSwiftTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7765BEFAD8E3DB7D1AC2509 /* Pods_JohnLewisSwiftTask.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +50,9 @@
 		B347D55C1E72BE8F009AB510 /* ProductTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTest.swift; sourceTree = "<group>"; };
 		B347D55E1E72BE8F009AB510 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B347D5681E72BEB9009AB510 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		B347D56A1E72C095009AB510 /* ProductApiTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductApiTest.swift; sourceTree = "<group>"; };
+		B347D56D1E72C0C7009AB510 /* ProductAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductAPI.swift; sourceTree = "<group>"; };
+		B347D56F1E72C0F1009AB510 /* Lists.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lists.swift; sourceTree = "<group>"; };
 		D7765BEFAD8E3DB7D1AC2509 /* Pods_JohnLewisSwiftTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JohnLewisSwiftTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -113,6 +119,7 @@
 		B347D5431E72BE8F009AB510 /* JohnLewisSwiftTask */ = {
 			isa = PBXGroup;
 			children = (
+				B347D56C1E72C0B6009AB510 /* Services */,
 				B347D5671E72BEAE009AB510 /* Models */,
 				B347D5441E72BE8F009AB510 /* AppDelegate.swift */,
 				B347D5461E72BE8F009AB510 /* ViewController.swift */,
@@ -129,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				B347D55C1E72BE8F009AB510 /* ProductTest.swift */,
+				B347D56A1E72C095009AB510 /* ProductApiTest.swift */,
 				B347D55E1E72BE8F009AB510 /* Info.plist */,
 			);
 			path = JohnLewisSwiftTaskTests;
@@ -138,8 +146,17 @@
 			isa = PBXGroup;
 			children = (
 				B347D5681E72BEB9009AB510 /* Product.swift */,
+				B347D56F1E72C0F1009AB510 /* Lists.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		B347D56C1E72C0B6009AB510 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B347D56D1E72C0C7009AB510 /* ProductAPI.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,6 +367,8 @@
 				B347D5691E72BEB9009AB510 /* Product.swift in Sources */,
 				B347D5451E72BE8F009AB510 /* AppDelegate.swift in Sources */,
 				B347D54D1E72BE8F009AB510 /* JohnLewisSwiftTask.xcdatamodeld in Sources */,
+				B347D56E1E72C0C7009AB510 /* ProductAPI.swift in Sources */,
+				B347D5701E72C0F1009AB510 /* Lists.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +376,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B347D56B1E72C095009AB510 /* ProductApiTest.swift in Sources */,
 				B347D55D1E72BE8F009AB510 /* ProductTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -563,6 +583,7 @@
 				B347D5631E72BE8F009AB510 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B347D5641E72BE8F009AB510 /* Build configuration list for PBXNativeTarget "JohnLewisSwiftTaskTests" */ = {
 			isa = XCConfigurationList;
@@ -571,6 +592,7 @@
 				B347D5661E72BE8F009AB510 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
