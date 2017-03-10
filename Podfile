@@ -6,6 +6,7 @@ target 'JohnLewisSwiftTask' do
   use_frameworks!
   pod 'SwiftyJSON'
   pod 'Alamofire', '~> 4.4'
+  pod 'SDWebImage', '~>3.8'
 
 
   target 'JohnLewisSwiftTaskTests' do

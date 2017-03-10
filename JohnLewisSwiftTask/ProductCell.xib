@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="89Z-5H-6pL" customClass="ProductCell" customModule="JohnLewisSwiftTask" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="K17-S3-ENS">
+                    <rect key="frame" x="0.0" y="0.0" width="200" height="160"/>
+                    <constraints>
+                        <constraint firstAttribute="height" secondItem="K17-S3-ENS" secondAttribute="width" multiplier="0.8:1" id="Pu8-oJ-bwW"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="35o-ja-XcH" userLabel="titleLabel">
+                    <rect key="frame" x="20" y="170" width="160" height="20"/>
+                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lPF-ZX-h5k" userLabel="priceLabel">
+                    <rect key="frame" x="20" y="190" width="160" height="20"/>
+                    <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <accessibility key="accessibilityConfiguration" identifier="productCell"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="lPF-ZX-h5k" secondAttribute="trailing" constant="20" id="M8E-lJ-1dy"/>
+                <constraint firstItem="lPF-ZX-h5k" firstAttribute="top" secondItem="35o-ja-XcH" secondAttribute="bottom" id="PCW-XH-jin"/>
+                <constraint firstItem="35o-ja-XcH" firstAttribute="top" secondItem="K17-S3-ENS" secondAttribute="bottom" constant="10" id="XSN-dL-uwz"/>
+                <constraint firstAttribute="trailing" secondItem="35o-ja-XcH" secondAttribute="trailing" constant="20" id="bQx-zn-TRb"/>
+                <constraint firstItem="K17-S3-ENS" firstAttribute="leading" secondItem="89Z-5H-6pL" secondAttribute="leading" id="d2s-0c-LXc"/>
+                <constraint firstItem="K17-S3-ENS" firstAttribute="top" secondItem="89Z-5H-6pL" secondAttribute="top" id="lyQ-BI-Thq"/>
+                <constraint firstAttribute="trailing" secondItem="K17-S3-ENS" secondAttribute="trailing" id="mfv-5K-FdQ"/>
+                <constraint firstItem="lPF-ZX-h5k" firstAttribute="leading" secondItem="89Z-5H-6pL" secondAttribute="leading" constant="20" id="shb-bm-8RK"/>
+                <constraint firstItem="35o-ja-XcH" firstAttribute="leading" secondItem="89Z-5H-6pL" secondAttribute="leading" constant="20" id="unZ-LO-JNi"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="image" destination="K17-S3-ENS" id="7xr-Zu-IVN"/>
+                <outlet property="price" destination="lPF-ZX-h5k" id="7Io-WK-HYr"/>
+                <outlet property="title" destination="35o-ja-XcH" id="RK1-aH-zDC"/>
+            </connections>
+            <point key="canvasLocation" x="-35" y="87"/>
+        </view>
+    </objects>
+</document>

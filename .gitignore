@@ -29,4 +29,5 @@ timeline.xctimeline
 playground.xcworkspace
 
 Pods/
-*.DS_Store
+.DS_Store
+Podfile.lock
