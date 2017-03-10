@@ -7,7 +7,8 @@ target 'JohnLewisSwiftTask' do
   pod 'SwiftyJSON'
   pod 'Alamofire', '~> 4.4'
   pod 'SDWebImage', '~>3.8'
-
+  pod 'ImageSlideshow', '~> 1.1.0'
+  pod "ImageSlideshow/SDWebImage"
 
   target 'JohnLewisSwiftTaskTests' do
     inherit! :search_paths

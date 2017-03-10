@@ -8,7 +8,8 @@ class ProductGridVC: UIViewController, UICollectionViewDataSource, UICollectionV
     @IBOutlet var spinner: UIActivityIndicatorView!
     var products: Array<Any> = [];
     lazy var selectedProduct = Product.init(withProduct: JSON({}))
-    
+    var productDetailVC: ProductDetailVC = ProductDetailVC();
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
@@ -58,6 +59,31 @@ class ProductGridVC: UIViewController, UICollectionViewDataSource, UICollectionV
         cell.image.sd_setImage(with:URL(string: url))
 
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let product = self.products[indexPath.item] as! Product;
+        let api = ProductAPI()
+        
+        spinner.isHidden = false;
+        
+        api.fetchMoreDetailsForProductWith(id: product.id) { (productWithDetails) in
+            self.selectedProduct = productWithDetails;
+            self.performSegue(withIdentifier: "transitionToProductDetail", sender: self)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue?, sender: Any?) {
+        
+        if (segue?.identifier == "transitionToProductDetail") {
+            
+            productDetailVC = segue!.destination as! ProductDetailVC
+            spinner.isHidden = true;
+            productDetailVC.setUpWithProduct(product: self.selectedProduct)
+            
+        }
+        
     }
 }
 
